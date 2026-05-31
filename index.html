@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LifeSync — Your Digital Life, Unified</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="src/styles/main.css" />
+</head>
+<body>
+
+  <!-- Animated Background -->
+  <div class="bg-orbs">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="nav-logo">
+      <div class="logo-icon">
+        <span class="logo-dot"></span>
+        <span class="logo-dot"></span>
+        <span class="logo-dot"></span>
+      </div>
+      LifeSync
+    </div>
+    <div class="nav-links">
+      <a href="#features">Features</a>
+      <a href="#how">How it works</a>
+      <a href="dashboard.html" class="btn-nav">Open App →</a>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-badge">
+      <span class="badge-dot"></span>
+      Powered by Wire + Claude AI
+    </div>
+    <h1 class="hero-title">
+      Your entire<br />
+      <span class="title-gradient">digital life</span><br />
+      in one place.
+    </h1>
+    <p class="hero-sub">
+      LifeSync pulls your data from LinkedIn, Reddit, Twitter and more — then uses AI to give you a daily briefing and deep intel on anyone in your network.
+    </p>
+    <div class="hero-cta">
+      <a href="dashboard.html" class="btn-primary">Get Started Free</a>
+      <a href="#how" class="btn-ghost">See how it works ↓</a>
+    </div>
+
+    <!-- Floating cards -->
+    <div class="hero-cards">
+      <div class="float-card card-1">
+        <div class="fc-icon">🔔</div>
+        <div class="fc-text">
+          <div class="fc-title">New connection</div>
+          <div class="fc-sub">Sarah viewed your profile</div>
+        </div>
+      </div>
+      <div class="float-card card-2">
+        <div class="fc-icon">💡</div>
+        <div class="fc-text">
+          <div class="fc-title">Daily Digest Ready</div>
+          <div class="fc-sub">7 updates across 4 platforms</div>
+        </div>
+      </div>
+      <div class="float-card card-3">
+        <div class="fc-icon">🧠</div>
+        <div class="fc-text">
+          <div class="fc-title">People Intel</div>
+          <div class="fc-sub">Report on @alexdev ready</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section class="features" id="features">
+    <div class="section-label">What you get</div>
+    <h2 class="section-title">Three powerful tools,<br />one dashboard.</h2>
+
+    <div class="features-grid">
+      <div class="feature-card feature-big">
+        <div class="feature-icon">📡</div>
+        <h3>Daily Digest</h3>
+        <p>Every morning, LifeSync pulls your data from all your accounts and delivers a clean AI-written summary. LinkedIn activity, Reddit saves, job alerts — all in one read.</p>
+        <div class="feature-tags">
+          <span>LinkedIn</span><span>Reddit</span><span>Twitter</span><span>Amazon</span>
+        </div>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon">🔍</div>
+        <h3>People Intel</h3>
+        <p>Research anyone before a meeting. Get a professional summary based on their public posts, activity, and content style.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon">📊</div>
+        <h3>Network Pulse</h3>
+        <p>See what your professional circle is talking about. Spot trends before they become obvious.</p>
+      </div>
+
+      <div class="feature-card feature-wide">
+        <div class="feature-icon">⚡</div>
+        <h3>Zero scraping headaches</h3>
+        <p>Powered by Wire's pre-built action layer. No selectors, no brittle automation, no maintenance. Just clean JSON data from the real web.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- How it works -->
+  <section class="how" id="how">
+    <div class="section-label">The process</div>
+    <h2 class="section-title">Ship in an afternoon.</h2>
+
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">01</div>
+        <div class="step-content">
+          <h3>Connect your accounts</h3>
+          <p>Pass your credentials once. Wire handles login persistence, anti-bot bypass, and proxy routing.</p>
+        </div>
+      </div>
+      <div class="step-divider"></div>
+      <div class="step">
+        <div class="step-num">02</div>
+        <div class="step-content">
+          <h3>Wire fetches your data</h3>
+          <p>Pick any action. Wire returns clean structured JSON from any site — no browser needed.</p>
+        </div>
+      </div>
+      <div class="step-divider"></div>
+      <div class="step">
+        <div class="step-num">03</div>
+        <div class="step-content">
+          <h3>Claude makes it useful</h3>
+          <p>Claude AI reads the raw data and writes your personalized briefing or people report.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="cta-card">
+      <h2>The internet is your database.<br />Wire is the query layer.</h2>
+      <p>Built for the Wire hackathon. Solo project. Shipped in a weekend.</p>
+      <a href="dashboard.html" class="btn-primary">Open Dashboard →</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-logo">LifeSync</div>
+    <p>Built with Wire + Claude AI · Hackathon 2026</p>
+  </footer>
+
+  <script src="src/scripts/landing.js"></script>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LifeSync — Dashboard</title>
+  <link rel="stylesheet" href="src/styles/dashboard.css" />
+</head>
+<body>
+<div class="app">
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <div class="sidebar-logo">
+      <div class="logo-dots">
+        <span></span><span></span><span></span>
+      </div>
+      LifeSync
+    </div>
+
+    <nav class="sidebar-nav">
+      <div class="nav-item active" data-page="digest">
+        <span class="nav-icon">📡</span> Daily Digest
+        <span class="nav-badge">7</span>
+      </div>
+      <div class="nav-item" data-page="intel">
+        <span class="nav-icon">🔍</span> People Intel
+      </div>
+      <div class="nav-item" data-page="pulse">
+        <span class="nav-icon">📊</span> Network Pulse
+      </div>
+      <div class="nav-item" data-page="cricket">
+  <span class="nav-icon">🏏</span> Live Cricket
+</div>
+      <div class="nav-section">Platforms</div>
+      <div class="nav-item" data-page="accounts">
+        <span class="nav-icon">🔗</span> Connected Accounts
+      </div>
+      <div class="nav-item" data-page="alerts">
+        <span class="nav-icon">🔔</span> Alerts
+        <span class="nav-badge">3</span>
+      </div>
+
+      <div class="nav-section">Settings</div>
+      <div class="nav-item" data-page="settings">
+        <span class="nav-icon">⚙️</span> Preferences
+      </div>
+    </nav>
+
+    <div class="sidebar-user">
+      <div class="user-avatar">AK</div>
+      <div class="user-info">
+        <div class="user-name">Aarav Kumar</div>
+        <div class="user-plan">● Pro Plan</div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- MAIN CONTENT -->
+  <main class="main">
+    <div class="topbar">
+      <div>
+        <div class="topbar-title" id="page-title">Daily Digest</div>
+        <div class="topbar-sub" id="page-sub">Friday, May 29 · 7 updates across 4 platforms</div>
+      </div>
+      <div class="topbar-actions">
+        <button class="btn-sm" id="refresh-btn" onclick="refreshAll()">⟳ Refresh</button>
+        <button class="btn-sm primary" onclick="generateDigest()">✦ Generate AI Digest</button>
+      </div>
+    </div>
+
+    <div class="content" id="main-content">
+      <!-- Injected by JS -->
+    </div>
+  </main>
+
+  <!-- RIGHT PANEL -->
+  <aside class="panel">
+    <div class="panel-header">
+      <div class="panel-title">Quick Intel</div>
+      <div class="panel-tabs">
+        <div class="panel-tab active" onclick="switchPanelTab(this, 'recent')">Recent</div>
+        <div class="panel-tab" onclick="switchPanelTab(this, 'saved')">Saved</div>
+        <div class="panel-tab" onclick="switchPanelTab(this, 'alerts')">Alerts</div>
+      </div>
+    </div>
+    <div class="panel-content" id="panel-content">
+      <!-- Injected by JS -->
+    </div>
+  </aside>
+</div>
+
+<script src="src/scripts/dashboard.js"></script>
+</body>
+</html>
